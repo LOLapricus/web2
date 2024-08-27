@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); 
+
+#topbar {
+  background-color: pink;
+  /* height: 50px;  We'll remove this, as it's causing issues on mobile */
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  display: flex; /* Arrange items in a row */
+  justify-content: space-around; /* Evenly distribute items */
+  align-items: center; /* Center items vertically */
+  padding: 10px; /* Add padding to provide some space around links */
+}
+
+#topbar a {
+  text-decoration: none;
+  color: black; 
+  padding: 10px;
+}
+
+#topbar a:hover {
+  color: white;
+  text-shadow: 2px 2px 4px #ff00ff; /* This creates the shade effect */
+}
+
+
+#banner {
+  display: block; /* Makes it a block-level element, taking up full width */
+  margin: 0 auto; /* Centers the image horizontally */
+  max-width: 100%; /* Ensures the image doesn't exceed the page width */
+  height: auto; /* Maintains aspect ratio */
+}
+
+#coming-soon {
+  text-align: center; /* Center the text */
+  font-size: 1.2em; /* Make the text slightly larger */
+  margin-top: 20px; /* Add some space between the banner and the text */
+  color: #333; /* Adjust the text color as needed */
+}
+
+body {
+  font-family: 'Pacifico', cursive; 
+  padding-top: 50px; /* Add padding to the top of the body to create space for the top bar */
+}
+
+#bottombar {
+  background-color: #f0f0f0; /* Light gray background */
+  padding: 15px; /* Add some padding around the link */
+  text-align: center; /* Center the link */
+  bottom: 0; /* Position it at the bottom */
+  width: 100%; /* Make it full width */
+  z-index: 10; /* Ensure it appears on top of other elements */
+  display: flex; /* Enable flexbox for vertical alignment */
+  flex-direction: column; /* Stack items vertically */
+}
+
+#bottombar a {
+  color: #333; /* Dark gray link text */
+  text-decoration: none; /* Remove default underline */
+}
+
+#bottombar a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+
+#background-video {
+  top: 0; /* Place it at the top */
+  left: 0; /* Place it at the left */
+  width: 100%; /* Make it full width */
+  height: 100%; /* Make it full height */
+  z-index: -1; /* Place it behind the banner image */
+  object-fit: cover; /* Cover the entire background area */
+}
+
+
+\
+
